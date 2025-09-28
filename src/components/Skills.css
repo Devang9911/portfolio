@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.skills-section{
+    background: rgb(1, 1, 22);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-section>h1{
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    padding-top: 100px;
+    color: #14e6b5;
+}
+
+.cardContainer{
+    /* border: 1px solid yellow; */
+    padding: 5px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 80px;
+    justify-content: center;
+}
+
+.card{
+    border-radius: 30px;
+    background: rgb(1, 1, 22);
+    border: 1px solid rgba(255, 255, 255, 0.295);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 44px -27px white;
+}
+
+.card>img{
+    height: 40%;
+    width: 40%;
+    object-fit: contain;
+}
+
+.card>h3{
+    font-size: 25px;
+}
+
+@media screen and (max-width: 768px){
+    .cardContainer{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        gap: 100px;
+    }
+}
+

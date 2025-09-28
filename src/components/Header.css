@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+.navbar {
+    z-index: 10;
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.nav-list>li {
+    list-style: none;
+}
+
+.nav-list>li>a {
+    font-weight: 700;
+    font-family: monospace;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.514);
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-list>li>a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-list>li>a:hover {
+    color: #fff;
+}
+
+.nav-list>li>a:hover::after {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px){
+    .navbar{
+        display: none;
+    }
+}

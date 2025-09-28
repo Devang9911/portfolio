@@ -1,0 +1,22 @@
+.divider {
+    background: rgb(1, 1, 22);
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #00f7d2, transparent);
+    box-shadow: 0 0 15px #00f7d2;
+}
+
+.icon>img{
+    width: 80px;
+}
