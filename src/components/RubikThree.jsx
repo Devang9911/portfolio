@@ -60,6 +60,7 @@ function Cubie({ position, textures, idx, stickerSize = 0.86 }) {
 
     return (
         <group position={[x, y, z]}>
+            {/* Cube base */}
             <mesh>
                 <boxGeometry args={[boxSize, boxSize, boxSize]} />
                 <meshPhysicalMaterial
@@ -71,12 +72,14 @@ function Cubie({ position, textures, idx, stickerSize = 0.86 }) {
                 />
             </mesh>
 
+            {/* Stickers */}
             {faces.map((f, faceIndex) => {
                 const [dx, dy, dz] = f.dir;
                 const isOuter =
                     (dx !== 0 && Math.abs(x) === 1) ||
                     (dy !== 0 && Math.abs(y) === 1) ||
                     (dz !== 0 && Math.abs(z) === 1);
+
                 if (!isOuter) return null;
 
                 const tex = textures[(idx + faceIndex) % textures.length];
@@ -107,17 +110,19 @@ function Cubie({ position, textures, idx, stickerSize = 0.86 }) {
     );
 }
 
+// ✅ moved coords out of component so ESLint is happy
+const COORDS = [-1, 0, 1];
+
 function RubikGroup({ textures }) {
     const groupRef = useRef();
 
-    const coords = [-1, 0, 1];
     const cubies = useMemo(() => {
         const arr = [];
         let id = 0;
-        for (let xi = 0; xi < coords.length; xi++) {
-            for (let yi = 0; yi < coords.length; yi++) {
-                for (let zi = 0; zi < coords.length; zi++) {
-                    arr.push({ pos: [coords[xi], coords[yi], coords[zi]], id: id++ });
+        for (let xi = 0; xi < COORDS.length; xi++) {
+            for (let yi = 0; yi < COORDS.length; yi++) {
+                for (let zi = 0; zi < COORDS.length; zi++) {
+                    arr.push({ pos: [COORDS[xi], COORDS[yi], COORDS[zi]], id: id++ });
                 }
             }
         }
