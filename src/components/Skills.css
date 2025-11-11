@@ -43,6 +43,13 @@
     align-items: center;
     justify-content: center;
     box-shadow: 0px 0px 44px -27px white;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 30px 0px #14e6b5;
 }
 
 .card>img{

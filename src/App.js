@@ -4,6 +4,7 @@ import Skills from './components/Skills';
 import Divider from './components/Divider';
 import Overview from './components/Overview';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import Education from './components/Education';
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <Overview/>
       <Divider/>
       <Skills/>
+      <Divider/>
+      <Education/>
+      <Divider/>
     </>
   )
 }

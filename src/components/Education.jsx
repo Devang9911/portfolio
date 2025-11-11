@@ -1,9 +1,23 @@
-function Education(){
+import './Education.css';
+
+function Education() {
     return (
         <>
-            <h1>Education section</h1>
+            <div className="educationSection">
+                <h1>Education</h1>
+                <div className="educationCard">
+                    <h2>Higher Education</h2>
+                    <p>- Jeevan Bharti Vidhyalaya</p>
+                    <p>10th - <span>( 73.00% )</span> 12th - <span>( 77.00% )</span></p>
+                </div>
+                <div className="educationCard">
+                    <h2>Bachelor Education</h2>
+                    <p>- S.D Jain International College</p>
+                    <p>( Last semester ongoing )</p>
+                </div>
+            </div>
         </>
     )
 }
 
-export default Education
+export default Education;

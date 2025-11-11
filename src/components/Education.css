@@ -1,0 +1,48 @@
+.educationSection {
+    background: rgb(1, 1, 22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding-bottom: 100px;
+}
+
+.educationSection h1{
+    color: #14e6b5;
+    font-size: 60px;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+    padding-top: 100px;
+}
+
+.educationCard {
+    padding: 30px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.377);
+    border-bottom: 1px solid #14e6b5;
+    border-radius: 15px;
+}
+
+.educationCard h2 {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
+
+.educationCard p {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.664);
+}
+
+.educationCard p span {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 767px) {
+    h1{
+        font-size: 50px;
+    }
+}
