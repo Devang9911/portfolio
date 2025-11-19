@@ -70,13 +70,14 @@
     }
 
     .card{
-        width: 150px;
-        height: 150px;
-        gap: 5px;
+        width: 200px;
+        height: 200px;
+        gap: 15px;
+        flex-wrap: nowrap;
     }
 
     .card>h3{
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 

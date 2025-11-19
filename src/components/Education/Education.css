@@ -58,4 +58,12 @@
         width: 300px;
         padding: 20px;
     }
+
+    .educationCard h2 {
+        font-size: 18px;
+    }
+
+    .educationCard p {
+        font-size: 13px;
+    }
 }
