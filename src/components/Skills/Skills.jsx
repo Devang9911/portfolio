@@ -37,9 +37,6 @@ const cardData = [
 
 
 function Skills() {
-
-
-
     return (
         <>
             <section id='skills' className='skills-section'>

@@ -13,7 +13,7 @@
 
 }
 
-/* Background stars layer */
+
 .home-section.stars::before {
   content: "";
   position: absolute;
@@ -28,18 +28,17 @@
   z-index: 0;
 }
 
-/* Animate stars downward */
+
 @keyframes moveStars {
   from {
     background-position: 0 0;
   }
   to {
-    background-position: 1000px 0; /* move horizontally */
+    background-position: 1000px 0; 
   }
 }
 
 
-/* Keep text + image above */
 .home-section .left,
 .home-section .right {
     position: relative;
@@ -76,7 +75,7 @@
     letter-spacing: 5px;
     position: relative;
     color: #14e6b5;
-    /* main text color */
+
 }
 
 .left>h1:nth-child(2)>span::before {
@@ -112,12 +111,12 @@
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        /* stack left + right */
         flex-wrap: nowrap;
-        /* prevent extra spacing */
         height: auto;
-        /* let content decide height */
-        min-height: 100vh;
+    }
+
+    .home-section.stars::before{
+        height: 150vh;
     }
 
     .left {
@@ -137,8 +136,8 @@
     }
 
     .left>h1:nth-child(2)>span::before {
-        left: 3px;
-        top: 3px;
+        left: 4px;
+        top: 6px;
     }
 
     .left>p {
@@ -150,9 +149,7 @@
         margin-top: 50px;
         margin-bottom: 50px;
         width: clamp(220px, 70%, 310px);
-        /* responsive cube */
         height: clamp(220px, 70vw, 310px);
-        /* margin-top: 2rem; */
     }
 
 }
