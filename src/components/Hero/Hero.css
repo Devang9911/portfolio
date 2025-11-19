@@ -116,7 +116,7 @@
     }
 
     .home-section.stars::before{
-        height: 150vh;
+        height: 100%;
     }
 
     .left {
@@ -147,7 +147,7 @@
 
     .right {
         margin-top: 50px;
-        margin-bottom: 50px;
+        margin-bottom: 100px;
         width: clamp(220px, 70%, 310px);
         height: clamp(220px, 70vw, 310px);
     }
