@@ -1,7 +1,7 @@
-import './Main.css'
-import RubikThree from './RubikThree';
+import './Hero.css';
+import RubikThree from '../RubikThree';
 
-function Main(){
+function Hero(){
     return (
         <>
             <section id="home" className="home-section stars">
@@ -19,4 +19,4 @@ function Main(){
     )
 }
 
-export default Main;
+export default Hero;

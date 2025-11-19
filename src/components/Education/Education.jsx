@@ -13,7 +13,7 @@ function Education() {
                 <div className="educationCard">
                     <h2>Bachelor Education</h2>
                     <p>- S.D Jain International College</p>
-                    <p>( Last semester ongoing )</p>
+                    <p>( Last Semester Ongoing )</p>
                 </div>
             </div>
         </>

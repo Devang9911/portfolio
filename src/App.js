@@ -1,25 +1,20 @@
 import './App.css'
-import Main from './components/Main';
-import Skills from './components/Skills';
-import Divider from './components/Divider';
-import Overview from './components/Overview';
-import { SpeedInsights } from "@vercel/speed-insights/react"
-import Education from './components/Education';
+import Hero from './components/Hero/Hero.jsx'
+import Overview from './components/Overview/Overview.jsx'
+import Skills from './components/Skills/Skills.jsx'
+import Education from './components/Education/Education.jsx'
+import Divider from './components/Divider/Divider.jsx'
 
-function App() {
+export default function App(){
   return (
     <>
-      <SpeedInsights/>
-      <Main/>
-      <Divider/>
-      <Overview/>
-      <Divider/>
-      <Skills/>
-      <Divider/>
-      <Education/>
-      <Divider/>
+      <Hero />
+      <Overview />
+      <Divider />
+      <Skills />
+      <Divider />
+      <Education />      
+      <Divider />
     </>
   )
 }
-
-export default App;
