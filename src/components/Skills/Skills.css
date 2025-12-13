@@ -36,8 +36,8 @@
     border-radius: 30px;
     background: rgba(39, 39, 59, 0.219);
     border: 1px solid rgba(255, 255, 255, 0.295);
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     display: flex;
     gap: 5px;
     flex-direction: column;
